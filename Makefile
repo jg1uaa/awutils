@@ -3,7 +3,7 @@ ifeq ($(shell uname -s),Darwin)
 EXTRACFLAGS:=-I/opt/local/include -L/opt/local/lib
 endif
 
-all:		log2bin$(EXE) awimage$(EXE) awflash$(EXE)
+all:		log2bin$(EXE) awimage$(EXE) # awflash$(EXE)
 
 clean:
 		rm -f awimage$(EXE) awflash$(EXE) log2bin$(EXE) parsecfg$(EXE)
